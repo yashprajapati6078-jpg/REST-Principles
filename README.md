@@ -68,13 +68,4 @@ After completing this assignment, the reader should be able to:
 
 ---
 
-## Author
 
-**Yash Prajapati**
-
-
----
-
-## Submission
-
-This repository is submitted as part of the internship/task assignment on REST Principles and API fundamentals.
