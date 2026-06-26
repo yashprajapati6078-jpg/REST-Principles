@@ -71,8 +71,7 @@ After completing this assignment, the reader should be able to:
 ## Author
 
 **Yash Prajapati**
-SY BSc IT
-Ramniranjan Jhunjhunwala College
+
 
 ---
 
