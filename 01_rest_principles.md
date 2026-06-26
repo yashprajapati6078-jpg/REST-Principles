@@ -125,7 +125,7 @@ This removes user 101 from the system.
 | GET    | Yes   | Yes         | Retrieve data                |
 | POST   | No    | No          | Create a new resource        |
 | PUT    | No    | Yes         | Replace an existing resource |
-| PATCH  | No    | Usually Yes | Partially update a resource  |
+| PATCH  | No    | No          | Partially update a resource  |
 | DELETE | No    | Yes         | Delete a resource            |
 
 A request is considered **safe** if it only reads data and does not modify anything on the server. A request is **idempotent** if repeating it multiple times produces the same final result as executing it once.
@@ -215,6 +215,9 @@ User 102 created
 ```
 
 Each request creates a new resource. Since the outcome changes every time, POST is not idempotent.
+## Relation to orchestrator/main.py
+
+The REST principles discussed above are directly applicable to files such as `orchestrator/main.py`. Resources are exposed through endpoints, HTTP verbs define the operations performed on those resources, statelessness allows each request to be processed independently, and idempotency ensures that retrying requests does not create inconsistent data or unexpected side effects. These principles help developers build predictable and reliable APIs.
 
 ## Conclusion
 
